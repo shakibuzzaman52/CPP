@@ -1,5 +1,6 @@
 #include<iostream>
 #include<conio.h>
+#include<iomanip>
 using namespace std;
 int main()
 {
@@ -9,19 +10,23 @@ int main()
 
 
    cout<<showpoint;
+   cout<<fixed;
+   cout<<setprecision(2);
 
    float sum = num1 + num2;
-   cout<< "Sum:"<< sum <<endl;
+   cout<<setw(15)<< "Sum:"<< sum <<endl;
 
    float Biyog = num1 - num2;
-   cout<< "Biyog: "<< Biyog<<endl;
+   cout<<setw(15)<< "Biyog: "<< Biyog<<endl;
+
+   cout<<noshowpoint;
 
    float Gun = num1 * num2;
-   cout<< "Gun: "<< Gun<<endl;
+   cout<<setw(15)<< "Gun: "<< Gun<<endl;
 
 
    float Vag = (float) num1 / num2;
-   cout<< "Vag: "<< Vag<<endl;
+   cout<<setw(15)<< "Vag: "<< Vag<<endl;
 
 //    int Vagses = num1 % num2;
 //    cout<< "Vagses: "<< Vagses<<endl;
