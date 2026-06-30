@@ -8,4 +8,7 @@ int main()
         cout<<"Bangladesh :"<<i<<endl;
         i++;
     }
+    while(i <= 10);
+
+    getch();
 }
