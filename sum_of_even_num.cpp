@@ -1,5 +1,5 @@
-#include<iostream>
-#include<conio.h>
+#include <iostream>
+#include <conio.h>
 using namespace std;
 int main()
 {
@@ -13,7 +13,6 @@ int main()
         sum = sum + i;
     }
     cout<<"Sum of even number is :"<<sum;
-
 
     getch();
 }
