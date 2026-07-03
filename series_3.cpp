@@ -1,4 +1,4 @@
-//1^2 + 2^2 +....+ n^2 
+//1 + 1/2 + 1/3 +.... + 1/ n
 #include <iostream>
 #include <conio.h>
 using namespace std;
