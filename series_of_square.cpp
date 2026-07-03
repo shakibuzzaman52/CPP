@@ -1,3 +1,4 @@
+//1^2 + 2^2 +....+ n^2 
 #include <iostream>
 #include <conio.h>
 //#include<cmath>
