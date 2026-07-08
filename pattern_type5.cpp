@@ -6,16 +6,15 @@ int main()
     cout << "Enter a number :";
     cin >> n;
 
-    for (row = n; row >= 1; row--)
+    for(row = 1; row <= n; row++)
     {
-        for (col = 1; col <= n - row; col++)
+        for(col = 1; col <= n - row; col++)
         {
-            cout << " ";
+            cout<<" ";
         }
-
-        for (col = 1; col <= row; col++)
+        for(col = 1; col <= row; col++)
         {
-            cout <<col;
+            cout<<col;
         }
         cout<<endl;
     }
