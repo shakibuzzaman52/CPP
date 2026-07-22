@@ -12,5 +12,5 @@ int main()
 int addition(int a, int b)
 {
     int sum = a + b;
-    return sum;  
+    return sum;
 }
