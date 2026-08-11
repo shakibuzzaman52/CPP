@@ -19,7 +19,5 @@ int main()
     {
         cout<<binaryNum(i)<<endl;
     }
-
-    cout<<binaryNum(decNum);
     return 0;
 }
