@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class student
+class student  // Class 
 {
     public:
     int id;
@@ -10,7 +10,7 @@ class student
 
 int main()
 {
-    student shakib;
+    student shakib;  // Object
     shakib.id = 3412;
     shakib.gpa = 5.00;
     cout<<shakib.id<<endl<<shakib.gpa<<endl;
