@@ -14,7 +14,11 @@ int binaryNum(int decNum)
 }
 int main()
 {
-    int decNum = 60;
+
+    for(int i = 1; i <= 10; i++)
+    {
+        cout<<binaryNum(i)<<endl;
+    }
 
     cout<<binaryNum(decNum);
     return 0;
