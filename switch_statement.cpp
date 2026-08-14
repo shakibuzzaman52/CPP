@@ -20,6 +20,8 @@ int main()
            break;
         case 7 : cout<< "Sunday";
            break;
+        default : cout<< "Invalid day";
+           break;
 
     }
     return 0;
