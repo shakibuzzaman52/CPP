@@ -7,5 +7,5 @@ int main()
     bool isAdult;
     isAdult = (age >= 18) ? true : false;
     cout<<isAdult;
-    return 0;
+    return 0; 
 }
