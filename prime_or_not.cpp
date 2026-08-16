@@ -1,37 +1,46 @@
 #include <bits/stdc++.h>
 using namespace std;
-// int number(int a)
-// {
-//     int fact = 1;
-//     for(int i = 1; i <= a; i++)
-//     {
-//         fact = fact * i;
-//     }
-//     cout<<fact;
-//     return fact;
-// }
 
 bool isPrime(int n)
 {
-    if(n == 1)
+    if(n < 2)
     {
         return false;
     }
+
     for(int i = 2; i < n; i++)
     {
-        if(n % i != 0)
-        {
-            return true;
-        }
-        else
+        if(n % i == 0)
         {
             return false;
         }
     }
 
+    return true;
 }
+
+bool isPrime2(int n)
+{
+    if(n < 2)
+    {
+        return false;
+    }
+
+    for(int i = 2; i * i <= n; i++)
+    {
+        if(n % i == 0)
+        {
+            return false;
+        }
+    }
+
+    return true;
+}
+
 int main()
 {
-    cout<<isPrime(7);
+    cout << isPrime(9) << endl;
+    cout << isPrime2(7);
+
     return 0;
 }
