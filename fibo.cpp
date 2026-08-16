@@ -10,11 +10,11 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
+        cout << first << " ";
+        
         int fibo = first + second;
         first = second;
         second = fibo;
-
-        cout << first << " ";
     }
 
     return 0;
