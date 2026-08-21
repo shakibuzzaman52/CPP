@@ -11,6 +11,6 @@ int main()
 
     change(a);
 
-    cout<< a << endl; // 30
+    cout<< a << endl; // 30 
     return 0;
 }
