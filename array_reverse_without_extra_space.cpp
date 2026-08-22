@@ -18,10 +18,11 @@ int main()
     while(start < end)
     {
         // swap
-        int temp = start;
-        start = end;
-        end = temp;
+        // int temp = start;
+        // start = end;
+        // end = temp;
 
+        swap(arr[start], arr[end]);
 
         start++;
         end--;
