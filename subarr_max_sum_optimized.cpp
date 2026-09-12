@@ -1,20 +1,20 @@
 #include <bits/stdc++.h>
 using namespace std;
-void subArrSum(int * arr, int n)
+void subArrSum(int *arr, int n)
 {
     int maxSum = INT_MIN;
-    for(int i= 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         int sum = 0;
-        for(int j = i; j < n; j++)
+        for (int j = i; j < n; j++)
         {
             sum = sum + arr[j];
+            maxSum = max(maxSum, sum);
         }
-        cout<<sum;
-        maxSum = max(maxSum, sum);
-        cout<<endl;
+        cout << sum;
+        cout << endl;
     }
-    cout<<"Max Sum = "<< maxSum;
+    cout << "Max Sum = " << maxSum;
 }
 int main()
 {
