@@ -13,6 +13,6 @@ int main()
     int n = sizeof(arr) / sizeof(int);
 
     sort(arr, arr + n); // Acending order
-    print(arr, n);
+    print(arr, n); 
     return 0;
 }
