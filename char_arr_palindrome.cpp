@@ -7,11 +7,14 @@ bool isPalindrome(char *word, int n)
     {
         if (word[start] != word[end])
         {
+            cout<<"Not Palindrome";
             return false;
         }
         start++;
         end--;
     }
+
+    cout<<"Yes, Palindrome";
     return true;
 }
 int main()
@@ -19,6 +22,6 @@ int main()
     char word[] = "racecar";
     int n = strlen(word);
 
-    cout << isPalindrome(word, n);
+    isPalindrome(word, n);
     return 0;
 }
