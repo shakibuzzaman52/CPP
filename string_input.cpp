@@ -2,13 +2,12 @@
 using namespace std;
 int main()
 {
-    char n[20];
-    cin.getline(n, 20);
-    cout<<n;
+    string str;
 
-    // string n;
-    // getline(cin, n);
-    // cout<<n; 
+    // cin>> str;  // Without Space
+
+    getline(cin, str);
+    cout<< str << endl;
 
 
     return 0;
