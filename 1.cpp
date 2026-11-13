@@ -5,7 +5,7 @@
 //     int sum = 0;
 //     int n;
 //     cin>> n;
-    
+
 //     // for(int i = 1; i <= n; i++)
 //     // {
 //     //     sum = sum + i;
@@ -14,7 +14,7 @@
 //     int i = 1;
 //     while(i <= n)
 //     {
-//         sum = sum + i; 
+//         sum = sum + i;
 //         i++;
 //     };
 
@@ -49,7 +49,6 @@
 //     return 0;
 // }
 
-
 // #include <bits/stdc++.h>
 // using namespace std;
 // int main()
@@ -74,7 +73,6 @@
 
 //     return 0;
 // }
-
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -107,7 +105,6 @@
 //     return 0;
 // }
 
-
 // #include <bits/stdc++.h>
 // using namespace std;
 // int main()
@@ -119,7 +116,6 @@
 //     cout<< maximum;
 //     return 0;
 // }
-
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -142,7 +138,6 @@
 //     return 0;
 // }
 
-
 // #include <bits/stdc++.h>
 // using namespace std;
 // int main()
@@ -163,7 +158,6 @@
 //     return 0;
 // }
 
-
 // #include <bits/stdc++.h>
 // using namespace std;
 // int main()
@@ -180,7 +174,6 @@
 //     cout<< sum;
 //     return 0;
 // }
-
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -199,7 +192,6 @@
 //     }
 //     return 0;
 // }
-
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -256,7 +248,6 @@
 //     return 0;
 // }
 
-
 // #include <bits/stdc++.h>
 // using namespace std;
 // int main()
@@ -276,7 +267,6 @@
 //     }while(true);
 //     return 0;
 // }
-
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -304,7 +294,6 @@
 //     }
 //     return 0;
 // }
-
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -334,7 +323,6 @@
 //     return 0;
 // }
 
-
 // #include <bits/stdc++.h>
 // using namespace std;
 // int main()
@@ -351,3 +339,231 @@
 //     return 0;
 // }
 
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin>> n;
+//     for(int i = 1; i <= n; i++)
+//     {
+//         for(int j = 1; j <= i; j++)
+//         {
+//             cout<< "*";
+//         }
+//         cout<< endl;
+//     }
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin>> n;
+
+//     for(int i = 4; i > 0; i--)
+//     {
+//         for(int j = 1; j <= i; j++)
+//         {
+//             cout<<"*";
+//         }
+//         cout<< endl;
+//     }
+//     return 0;
+// }
+
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin >> n;
+
+//     for (int i = 1; i <= n; i++)
+//     {
+//         cout << "*";
+
+//         if (i == 1 || i == n)
+//         {
+//             cout<< "***";
+//         }
+//         else 
+//         {
+//             cout<< "   ";
+//         }
+
+//         cout << "*";
+//         cout<< endl;
+
+//     }
+
+//     return 0;
+// }
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin>> n;
+//     for(int i = n; i > 0; i--)
+//     {
+//         for(int j = 1; j < i; j++)
+//         {
+//             cout<<" ";
+//         }
+
+//         for(int j = i; j <= n; j++)
+//         {
+//             cout<< "*";
+//         }
+
+//         cout<< endl;
+//     }
+
+
+//     return 0;
+// }
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin>> n;
+//     int  num = 1;
+
+//     for(int i = 1; i <= n; i++)
+//     {
+//         for(int j = 1; j <= i; j++)
+//         {
+//             cout<<num++;
+//         }
+//         cout<< endl;
+//     }
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin>> n;
+//     for(int i = 1; i <= n; i++)
+//     {
+//         for(int j = 1; j <= n - i; j++)
+//         {
+//             cout<< " ";
+//         }
+//         for(int j = 1; j <= 2*i - 1; j++)
+//         {
+//             cout<< "*";
+//         }
+       
+//         cout<< endl;
+//     }
+
+//     for(int i = n; i > 0; i--)
+//     {
+//         for(int j = 1; j <= n - i; j++)
+//         {
+//             cout<< " ";
+//         }
+//         for(int j = 1; j <= 2*i - 1; j++)
+//         {
+//             cout<< "*";
+//         }
+
+//         cout<< endl;
+//     }
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin>> n;
+
+//     for(int i = 1; i <= n; i++)
+//     {
+
+//         cout<< "*";
+
+//         for(int j = 1; j <= i - 1; j++)
+//         {
+//             cout<<"*";
+//         }
+
+//         for(int j = 1; j <= 2*(n - i); j++)
+//         {
+//             cout<<" ";
+//         }
+
+//         for(int j = 1; j <= i - 1; j++)
+//         {
+//             cout<<"*";
+//         }
+
+//         cout<< "*";
+
+        
+//         cout<< endl;
+//     }
+
+//     for(int i = n; i > 0; i--)
+//     {
+
+//         cout<< "*";
+
+//         for(int j = 1; j <= i - 1; j++)
+//         {
+//             cout<<"*";
+//         }
+
+//         for(int j = 1; j <= 2*(n - i); j++)
+//         {
+//             cout<<" ";
+//         }
+
+//         for(int j = 1; j <= i - 1; j++)
+//         {
+//             cout<<"*";
+//         }
+
+//         cout<< "*";
+
+        
+//         cout<< endl;
+//     }
+//     return 0;
+// }
+
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+
+// void print()
+// {
+//     cout<<"Shakib";
+// }
+// void asistant()
+// {
+//     print();
+//     cout<<"Nishat";
+// }
+// int main()
+// {
+//     asistant();
+//     return 0;
+// }
