@@ -374,8 +374,6 @@
 //     return 0;
 // }
 
-
-
 // #include <bits/stdc++.h>
 // using namespace std;
 // int main()
@@ -391,7 +389,7 @@
 //         {
 //             cout<< "***";
 //         }
-//         else 
+//         else
 //         {
 //             cout<< "   ";
 //         }
@@ -403,7 +401,6 @@
 
 //     return 0;
 // }
-
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -426,10 +423,8 @@
 //         cout<< endl;
 //     }
 
-
 //     return 0;
 // }
-
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -466,7 +461,7 @@
 //         {
 //             cout<< "*";
 //         }
-       
+
 //         cout<< endl;
 //     }
 
@@ -515,7 +510,6 @@
 
 //         cout<< "*";
 
-        
 //         cout<< endl;
 //     }
 
@@ -541,17 +535,13 @@
 
 //         cout<< "*";
 
-        
 //         cout<< endl;
 //     }
 //     return 0;
 // }
 
-
-
 // #include <bits/stdc++.h>
 // using namespace std;
-
 
 // void print()
 // {
@@ -567,3 +557,229 @@
 //     asistant();
 //     return 0;
 // }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int  sum(int a, int b)
+// {
+//     int sum = a + b;
+//     return sum;
+// }
+// int main()
+// {
+//     int a, b;
+//     a = 5;
+//     b = 6;
+//     cout<<sum(a, b);
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int fact(int n)
+// {
+//     int fact = 1;
+//     for(int i = n; i > 0; i--)
+//     {
+//         fact = fact * i;
+//     }
+//     return fact;
+// }
+// int main()
+// {
+//     int n;
+//     cin>> n;
+//     cout<<fact(n);
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int fact(int n)
+// {
+//     int fact = 1;
+//     for(int i = 1; i <= n; i++)
+//     {
+//         fact = fact * i;
+//     }
+//     return fact;
+// }
+
+// int calculation(int n, int r)
+// {
+//     int result = fact(n)/(fact(r)*fact(n - r));
+//     return result;
+// }
+// int main()
+// {
+//     int n, r;
+//     cin>> n >> r;
+
+//     cout<<calculation(n, r);
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// bool isPrime(int n)
+// {
+//     if(n < 2)
+//     {
+//         return false;
+//     }
+//     for(int i = 2; i < n; i++)
+//     {
+//         if(n % i == 0)
+//         {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// void allPrime(int n)
+// {
+//     for(int i = 2; i < n; i++)
+//     {
+//         if(isPrime(i) == true)
+//         {
+//             cout<<i<<" ";
+//         }
+//     }
+// }
+// int main()
+// {
+//     int n;
+//     cin>> n;
+//     allPrime(n);
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int bin(int n)
+// {
+//     int reverse = 0, decimal = 0;
+
+//     while (n > 0)
+//     {
+//         int last = n % 10;
+//         n = n / 10;
+//         reverse = reverse * 10 + last;  // 1101
+//     }
+
+//     while (reverse > 0)
+//     {
+//         int last = reverse % 10;
+//         reverse = reverse / 10;
+//         decimal = 2 * decimal + last;
+//     }
+//     return decimal;
+// }
+// int main()
+// {
+//     int n;
+//     cin >> n;
+//     cout << bin(n);
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int decimal(int n)
+// {
+//     int rev = 0, count = 0, bin = 0;
+//     while(n > 0)
+//     {
+//         int last = n % 2;
+//         n = n / 2;
+//         rev = rev * 10 + last;
+//         count++;
+//     }
+//     for(int i = 1; i <= count; i++)
+//     {
+//         int last = rev % 10;
+//         rev = rev / 10;
+//         bin = bin * 10 + last;
+//     }
+
+//     return bin;
+// }
+// int main()
+// {
+//     int n;
+//     cin>> n;
+//     cout<< decimal(n);
+//     return 0;
+// }
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int bin(int n)
+// {
+//     int decimal = 0;
+
+//     int pow = 1;
+//     while (n > 0)
+//     {
+//         int last = n % 10;
+//         n = n / 10;
+//         decimal = decimal + last * pow;
+//         pow = pow * 2;
+//     }
+
+//     return decimal;
+// }
+// int main()
+// {
+//     int n;
+//     cin >> n; // 1011
+//     cout << bin(n);
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int a = 10;
+//     int * ptr = &a;
+//     int ** pptr = &ptr;
+//     cout<< pptr << " = " << &ptr << endl;
+//     cout<< ptr << endl;
+//     cout<< &a << endl;
+
+//     cout<< *ptr;
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// void passAdress(int* ptr)
+// {
+//     *ptr = 20;
+//     cout<<*ptr << endl;
+// }
+// int main()
+// {
+//     int a = 10;
+//     passAdress(&a);
+//     cout<< a << endl;
+
+//     return 0;
+// }
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a = 10;
+    int &b = a;
+
+    cout<< a << b;
+    return 0;
+}
