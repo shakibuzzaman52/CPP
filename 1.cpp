@@ -773,13 +773,246 @@
 //     return 0;
 // }
 
-#include <bits/stdc++.h>
-using namespace std;
-int main()
-{
-    int a = 10;
-    int &b = a;
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int a = 10;
+//     int &b = a;
 
-    cout<< a << b;
-    return 0;
-}
+//     cout<< a << b;
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int name[5] = {1, 2, 3, 4, 5};
+//     int n = sizeof(name)/ sizeof(int);
+//     for(int i = 0; i < n; i++)
+//     {
+//         cout<<name[i] << " ";
+//     }
+
+//     return 0;
+// }
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin>>n;
+//     int marks[n];
+
+//     for(int i = 0; i < n; i++)
+//     {
+//         cin>>marks[i];
+//     }
+
+//     int max = INT_MIN;
+//     for(int i = 0; i < n; i++)
+//     {
+//         if(marks[i] > max)
+//         {
+//             max = marks[i];
+//         }
+//     }
+
+//     cout<< max;
+
+//     return 0;
+// }
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// void func(int arr[])
+// {
+//     arr[0] = 20;
+// }
+// int main()
+// {
+//     int arr[] = {1, 22, 3, 4, 5};
+//     func(arr);
+
+//     cout<<arr[0];
+//     return 0;
+// }
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// void printarr(int arr[], int n)
+// {
+//     for(int i = 0; i < n; i++)
+//     {
+//         cout<<arr[i]<<",";
+//     }
+// }
+// int main()
+// {
+//     int arr[] = {1, 2, 3, 4, 5};
+//     int n = sizeof(arr)/ sizeof(int);
+
+//     printarr(arr, n);
+//     return 0;
+// }
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int linSer(int* arr, int n, int key)
+// {
+//     for(int i = 0; i< n; i++)
+//     {
+//         if(key == arr[i])
+//         {
+//             return true;
+//         }
+//     }
+
+//     return false;
+// }
+// int main()
+// {
+//     int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+//     int n = sizeof(arr) / sizeof(int);
+//     int key = 3;
+
+//     cout<<linSer(arr, n, key);
+//     return 0;
+// }
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int arr[] = {1, 2, 3, 4, 5};
+//     int n = sizeof(arr) / sizeof(int);
+
+//     for(int i = n - 1; i >= 0; i--)
+//     {
+//         cout<<arr[i];
+//     }
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int arr[] = {1, 2, 3, 4, 5};
+//     int n = sizeof(arr) / sizeof(int);
+
+//     int arrcopy[n];
+
+//     for(int i = 0; i < n; i++)
+//     {
+//         int j = n - 1 - i;
+//         arrcopy[i] = arr[j];
+//     }
+
+//     for(int i = 0; i< n; i++)
+//     {
+//         arr[i] = arrcopy[i];
+//     }
+
+
+//     for(int i = 0; i< n; i++)
+//     {
+//         cout<< arr[i];
+//     }
+
+// }
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// void printarr(int* arr, int n)
+// {
+//     for(int i = 0; i < n/2; i++)
+//     {
+//         int j = n - 1 - i;
+//         swap(arr[i], arr[j]);
+        
+//     }
+
+//     for(int i = 0; i < n; i++)
+//     {
+//         cout<<arr[i];
+//     }
+// }
+// int main()
+// {
+//     int arr[] = {1, 2, 3, 4, 5};
+//     int n = sizeof(arr) / sizeof(int);
+
+//     printarr(arr, n);
+//     return 0;
+// }
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int arr[] = {1, 2, 3, 4, 5};
+//     int n = sizeof(arr) / sizeof(int);
+//     int start = 0;
+//     int end = n - 1;
+
+//     while(start <= end)
+//     {
+//         swap(arr[start], arr[end]);
+//         start++;
+//         end--;
+//     }
+
+//     for(int i = 0; i < n; i++)
+//     {
+//         cout<<arr[i];
+//     }
+//     return 0;
+// }
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int arr[] = {2, 5, 7, 9, 11};
+//     int n = sizeof(arr) / sizeof(int);
+//     int key = 9;
+
+//     int start = 0;
+//     int end = n - 1;
+//     while(start <= end)
+//     {
+//         int mid = (start + end)/2;
+//         if(arr[mid] == key)
+//         {
+//             cout<<mid;
+//             break;
+//         }
+//         else if(arr[mid] > key)
+//         {
+//             end = mid - 1;
+//         }
+//         else if(arr[mid] < key)
+//         {
+//             start = mid + 1;
+//         }
+//         else
+//         {
+//             cout<<"Not Found";
+//         }
+//     }
+
+//     return 0;
+// }
+
+
