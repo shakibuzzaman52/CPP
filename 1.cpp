@@ -715,7 +715,6 @@
 //     return 0;
 // }
 
-
 // #include <bits/stdc++.h>
 // using namespace std;
 
@@ -798,7 +797,6 @@
 //     return 0;
 // }
 
-
 // #include <bits/stdc++.h>
 // using namespace std;
 // int main()
@@ -826,7 +824,6 @@
 //     return 0;
 // }
 
-
 // #include <bits/stdc++.h>
 // using namespace std;
 // void func(int arr[])
@@ -841,7 +838,6 @@
 //     cout<<arr[0];
 //     return 0;
 // }
-
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -860,7 +856,6 @@
 //     printarr(arr, n);
 //     return 0;
 // }
-
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -885,7 +880,6 @@
 //     cout<<linSer(arr, n, key);
 //     return 0;
 // }
-
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -921,14 +915,12 @@
 //         arr[i] = arrcopy[i];
 //     }
 
-
 //     for(int i = 0; i< n; i++)
 //     {
 //         cout<< arr[i];
 //     }
 
 // }
-
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -938,7 +930,7 @@
 //     {
 //         int j = n - 1 - i;
 //         swap(arr[i], arr[j]);
-        
+
 //     }
 
 //     for(int i = 0; i < n; i++)
@@ -954,7 +946,6 @@
 //     printarr(arr, n);
 //     return 0;
 // }
-
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -978,7 +969,6 @@
 //     }
 //     return 0;
 // }
-
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -1015,4 +1005,123 @@
 //     return 0;
 // }
 
+// #include <bits/stdc++.h>
+// using namespace std;
+// void subArrPrint(int *arr, int n)
+// {
+//     int maxsum = INT_MIN;
 
+//     for (int i = 0; i < n; i++)
+//     {
+//         int sum = 0;
+//         for (int j = i; j < n; j++)
+//         {
+//             sum = sum + arr[j];
+//             if (sum > maxsum)
+//             {
+//                 maxsum = sum;
+//             }
+//         }
+//     }
+
+//     cout << maxsum;
+// }
+
+// int main()
+// {
+//     int arr[6] = {2, -3, 6, -5, 4, 2};
+//     subArrPrint(arr, 6);
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// void subArrPrint(int * arr, int n)
+// {
+//     int maxsum = INT_MIN;
+//     int sum = 0;
+//     for(int i = 0; i < n; i++)
+//     {
+//         sum = sum + arr[i];
+//         maxsum = max(maxsum, sum);
+//         if(sum < 0)
+//         {
+//             sum = 0;
+//         }
+//     }
+
+//     cout<< sum;
+// }
+// int main()
+// {
+//     int arr[6] = {2, -3, 6, -5, 4, 2};
+//     subArrPrint(arr, 6);
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// void bestbuyday(int *arr, int n)
+// {
+//     int maxProfit = 0;
+//     for (int i = 0; i < n; i++)
+//     {
+//         int buymin = INT_MAX;
+//         int sell = arr[i];
+//         for (int j = 1; j < i; j++)
+//         {
+//             if (buymin > arr[j])
+//             {
+//                 buymin = arr[j];
+//             }
+//         }
+
+//         int profit = sell - buymin;
+//         maxProfit = max(maxProfit, profit);
+//     }
+
+//     cout<< maxProfit;
+// }
+// int main()
+// {
+//     int arr[] = {7, 1, 5, 3, 6, 4};
+//     int n = sizeof(arr) / sizeof(int);
+
+//     bestbuyday(arr, n);
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// void trapwater(int* arr, int n)
+// {
+//     int maxTrapwater = 0;
+    
+    
+
+//     for(int i = 0; i < n; i++)
+//     {
+//         int rightmax = 0;
+//         int leftmax = 0;
+//         for(int j = i + 1; j < n; j++)
+//         {
+//             rightmax = max(rightmax, arr[j]);
+//         }
+//         for(int j = i - 1; j >= 0; j--)
+//         {
+//             leftmax = max(leftmax, arr[j]);
+//         }
+//         int trapwater = max(0, min(rightmax, leftmax) - arr[i]);
+//         maxTrapwater = maxTrapwater + trapwater;
+//     }
+
+//     cout<< maxTrapwater;
+// }
+// int main()
+// {
+//         int arr[] = {4, 2, 0, 6, 3, 2, 5};
+//         int n = sizeof(arr) / sizeof(int);
+
+//         trapwater(arr, n);
+//     return 0;
+// }
