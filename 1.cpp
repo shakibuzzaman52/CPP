@@ -1463,19 +1463,17 @@
 //     }
 //     for (int i = 0; i < str1.length(); i++)
 //     {
-//         int idx = str1[i] - 'a';
-//         count[idx]++;
+//         count[str1[i] - 'a']++;
 //     }
 //     for (int i = 0; i < str2.length(); i++)
 //     {
-//         int idx = str2[i] - 'a';
-
-//         if (count[idx] == 0)
+//         if (count[str2[i] - 'a'] == 0)
 //         {
 //             cout << "Not Anagram";
 //             return false;
 //         }
-//         count[idx]--;
+
+//         count[str2[i] - 'a']--;
 //     }
 //     cout << "Anagram";
 //     return true;
