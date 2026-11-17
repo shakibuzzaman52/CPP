@@ -1328,3 +1328,126 @@
 //     return 0;
 // }
 
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     char arr[] = "Shakib";
+//     char arr2[strlen(arr)];
+//     strcpy(arr2, arr);
+
+//     cout<<arr2 << endl;
+//     // strcat(arr, arr2);
+//     // cout<< arr << endl;
+//     cout<<strcmp(arr, arr2);
+//     return 0;
+// }
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     char arr[] = "madam";
+
+//     char arr2[strlen(arr) + 1];
+//     strcpy(arr2, arr);
+//     reverse(arr2, arr2 + strlen(arr));
+//     if(strcmp(arr, arr2) == 0)
+//     {
+//         cout<< "Paalindrome";
+//     }
+//     else
+//     {
+//         cout<< "Not Palindrome";
+//     }
+//     return 0;
+// }
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     string str;
+//     getline(cin, str);
+//     cout<< str;
+//     cout<< str[1];
+//     cout<< str[2];
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     string str1;
+//     getline(cin, str1);
+
+//     for(int i = 0; i < str1.length(); i++)
+//     {
+//         cout<<str1[i] << ",";
+//     }
+
+//     for(char ch: str1)
+//     {
+//         cout<< ch <<",";
+//     }
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     string str;
+//     getline(cin, str);
+
+//     cout<<str.length() << endl;
+//     cout<<str.at(2) << endl;
+//     cout<<str.find("cpp") << endl;
+//     cout<<str.substr(2, 5) << endl;
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     string str = "anagram";
+
+//     sort(str.begin(), str.end());
+//     cout<< str << endl;
+
+//     char arr[] = "anagram";
+//     sort(arr, arr + strlen(arr));
+//     cout<< arr << endl;
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     string str1 = "anagram";
+//     string str2 = "magrana";
+//     if(str1.length() == str2.length())
+//     {
+//         sort(str1.begin(), str1.end());
+//         sort(str2.begin(), str2.end());
+
+//         if(str1 == str2)
+//         {
+//             cout<<"Anagram";
+//         }
+//         else
+//         {
+//             cout<< "Not Anagram";
+//         }
+//     }
+//     else
+//     {
+//         cout<< "Not Anagram";
+//     }
+//     return 0;
+// }
