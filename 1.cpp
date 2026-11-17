@@ -1125,3 +1125,70 @@
 //         trapwater(arr, n);
 //     return 0;
 // }
+
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     char str[10];
+
+//     for(int i = 0; i < 5; i++)
+//     {
+//         cin>>str[i];
+//     }
+//     for(int i = 0; i < 5; i++)
+//     {
+//         cout<< str[i] << end;
+//     }
+
+//     cout<<str;
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     char str[] = "code with harry";
+//     cout<< strlen(str);
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     char str[50];
+//     cin.getline(str, 50);
+
+//     cout<< strlen(str) << endl;
+//     cout<< str;
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// void toUpper(char * arr, int n)
+// {
+//     for(int i = 0; i < n; i++)
+//     {
+//         if(arr[i] >= 'A' && arr[i] <= 'Z')
+//         {
+//             continue;
+//         }
+//         else
+//         {
+//             arr[i] = arr[i] - 'a' + 'A';
+//         }
+//     }
+// }
+// int main()
+// {
+//     char str[] = "ApPle";
+//     toUpper(str, strlen(str));
+
+//     cout<<  str;
+//     return 0;
+// }
