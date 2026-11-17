@@ -1096,8 +1096,6 @@
 // void trapwater(int* arr, int n)
 // {
 //     int maxTrapwater = 0;
-    
-    
 
 //     for(int i = 0; i < n; i++)
 //     {
@@ -1125,8 +1123,6 @@
 //         trapwater(arr, n);
 //     return 0;
 // }
-
-
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -1192,3 +1188,143 @@
 //     cout<<  str;
 //     return 0;
 // }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// void toLower(char * arr, int n)
+// {
+//     for(int i = 0; i < n; i++)
+//     {
+//         if(arr[i] <= 'z' && arr[i] >= 'a')
+//         {
+//             continue;
+//         }
+//         else
+//         {
+//             arr[i] = arr[i] - 'A' + 'a';
+//         }
+//     }
+// }
+// int main()
+// {
+//     char arr[] = "applE";
+
+//     toLower(arr, strlen(arr));
+//     cout<< arr;
+
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     char arr[] = "madam";
+//     int n = strlen(arr);
+//     bool isPalindrome = true;
+
+//     for(int i = n - 1; i >= 0; i--)
+//     {
+//         if(arr[i] != arr[n - 1 - i])
+//         {
+//             isPalindrome = false;
+//             break;
+//         }
+//     }
+//     if(isPalindrome)
+//     {
+//         cout<< "Palindrome";
+//     }
+//     else
+//     {
+//         cout<<"Not palindrome";
+//     }
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     char str[] = "Shakib";
+//     int n = strlen(str);
+//     int start = 0;
+//     int end = n - 1;
+
+//     while(start <= end)
+//     {
+//         swap(str[start], str[end]);
+//         start++;
+//         end--;
+//     }
+
+//     cout<<str;
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int isPalindrome(char* arr, int n)
+// {
+//     int st = 0, ed = n - 1;
+//     while(st < ed)
+//     {
+//         if(arr[st] != arr[ed])
+//         {
+//             return false;
+//         }
+//         st++; ed--;
+//     }
+//     return true;
+// }
+// int main()
+// {
+//     char arr[] = "madam";
+//     int n = strlen(arr);
+
+//     cout<<isPalindrome(arr, n);
+
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// void toUpper(char *arr, int n)
+// {
+//     for (int i = 0; i < n; i++)
+//     {
+//         if (arr[i] >= 'A' && arr[i] <= 'Z')
+//         {
+//             continue;
+//         }
+//         else
+//         {
+//             arr[i] = arr[i] - 'a' + 'A';
+//         }
+//     }
+
+// }
+// int isPalindrome(char* arr, int n)
+// {
+//     int st = 0, ed = n - 1;
+//     while(st < ed)
+//     {
+//         if(arr[st] != arr[ed])
+//         {
+//             return false;
+//         }
+//         st++; ed--;
+//     }
+//     return true;
+// }
+// int main()
+// {
+//     char arr[] = "mAdam";
+//     int n = strlen(arr);
+
+//     toUpper(arr, n);
+//     cout<<isPalindrome(arr, n);
+
+//     return 0;
+// }
+
