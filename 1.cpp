@@ -1487,3 +1487,145 @@
 
 //     return 0;
 // }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int n = 3;
+//     int arr[n][n];
+
+//     for(int i = 0; i < n; i++)
+//     {
+//         for(int j = 0; j < n; j++)
+//         {
+//             cin>>arr[i][j];
+//         }
+//     }
+
+//     for(int i = 0; i < n; i++)
+//     {
+//         for(int j = 0; j < n; j++)
+//         {
+//             cout<<arr[i][j] <<" ";
+//         }
+//         cout<< endl;
+//     }
+
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int n = 4;
+//     int arr[n][n];
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = 0; j < n; j++)
+//         {
+//             cin >> arr[i][j];
+//         }
+//     }
+
+//     int row_start = 0, col_strat = 0;
+//     int row_end = n - 1, col_end = n - 1;
+
+//     while (row_start <= row_end && col_strat <= col_end)
+//     {
+//         for (int j = col_strat; j <= col_end; j++)
+//         {
+//             cout << arr[row_start][j] << " ";
+//         }
+
+//         for (int i = row_start + 1; i <= row_end; i++)
+//         {
+//             cout << arr[i][col_end] << " ";
+//         }
+
+//         for (int j = col_end - 1; j >= col_strat; j--)
+//         {
+//             if(row_start == row_end)
+//             {
+//                 break;
+//             }
+//             cout << arr[row_end][j] << " ";
+//         }
+
+//         for (int i = row_end - 1; i >= row_start + 1; i--)
+//         {
+//             if(col_strat == col_end)
+//             {
+//                 break;
+//             }
+//             cout << arr[i][col_strat] << " ";
+//         }
+//         row_start++;
+//         row_end--;
+//         col_strat++;
+//         col_end--;
+
+//     }
+
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// bool search(int arr[][4], int n, int m, int key)
+// {
+//     int i = 0, j = n - 1;
+
+//     while(i < n && j > 0)
+//     {
+//         if(arr[i][j] == key)
+//         {
+//             cout<<"Result Found\n" <<i <<","<<j;
+//             return true;
+//         }
+//         else if(arr[i][j] < key)
+//         {
+//             i++;
+//         }
+//         else if(arr[i][j] > key)
+//         {
+//             j--;
+//         }
+//     }
+
+//     cout<< "Result not found";
+//     return false;
+// }
+// int main()
+// {
+//     int arr[4][4] = {
+//         {10, 20, 30, 40},
+//         {15, 25, 35, 45},
+//         {27, 29, 37, 38},
+//         {32, 33, 39, 50},
+//     };
+
+//     search(arr, 4, 4, 33);
+//     return 0;
+// }
+
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int arr[4][4] = {
+//         {10, 20, 30, 40},
+//         {15, 25, 35, 45},
+//         {27, 29, 37, 38},
+//         {32, 33, 39, 50},
+//     }; 
+    
+    
+//     cout<<*(*(arr + 2) + 2) <<" = "<< arr[2][2];
+//     return 0;
+// }
+
