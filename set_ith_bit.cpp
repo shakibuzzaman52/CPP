@@ -8,6 +8,6 @@ int setIthBit(int n, int i)
 }
 int main()
 {
-    cout<< setIthBit(7, 3) << endl; // 1111 -- 15
+    cout<< setIthBit(7, 3) << endl; //0111 -- 1111 -- 15
     return 0;
 }
