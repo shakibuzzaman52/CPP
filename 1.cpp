@@ -1611,8 +1611,6 @@
 //     return 0;
 // }
 
-
-
 // #include <bits/stdc++.h>
 // using namespace std;
 // int main()
@@ -1622,10 +1620,45 @@
 //         {15, 25, 35, 45},
 //         {27, 29, 37, 38},
 //         {32, 33, 39, 50},
-//     }; 
-    
-    
+//     };
+
 //     cout<<*(*(arr + 2) + 2) <<" = "<< arr[2][2];
 //     return 0;
 // }
 
+#include <bits/stdc++.h>
+using namespace std;
+bool isAnagram(string str1, string str2)
+{
+    if (str1.length() != str2.length())
+    {
+        return false;
+    }
+
+    int count[26] = {0};
+
+    for(int i = 0; i < str1.length(); i++)
+    {
+        count[str1[i] - 'a']++;
+    }
+
+    for(int i = 0; i < str2.length(); i++)
+    {
+        if(count[str2[i] - 'a'] == 0)
+        {
+            return false;
+        }
+        count[str2[i] - 'a']--;
+    }
+
+    return true;
+}
+int main()
+{
+    string str1 = "anagram";
+    string str2 = "nagaram";
+
+    cout<< isAnagram(str1, str2);
+
+    return 0;
+}
