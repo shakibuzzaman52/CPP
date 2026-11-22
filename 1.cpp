@@ -1626,39 +1626,65 @@
 //     return 0;
 // }
 
-#include <bits/stdc++.h>
-using namespace std;
-bool isAnagram(string str1, string str2)
-{
-    if (str1.length() != str2.length())
-    {
-        return false;
-    }
+// #include <bits/stdc++.h>
+// using namespace std;
+// bool isAnagram(string str1, string str2)
+// {
+//     if (str1.length() != str2.length())
+//     {
+//         return false;
+//     }
 
-    int count[26] = {0};
+//     int count[26] = {0};
 
-    for(int i = 0; i < str1.length(); i++)
-    {
-        count[str1[i] - 'a']++;
-    }
+//     for(int i = 0; i < str1.length(); i++)
+//     {
+//         count[str1[i] - 'a']++;
+//     }
 
-    for(int i = 0; i < str2.length(); i++)
-    {
-        if(count[str2[i] - 'a'] == 0)
-        {
-            return false;
-        }
-        count[str2[i] - 'a']--;
-    }
+//     for(int i = 0; i < str2.length(); i++)
+//     {
+//         if(count[str2[i] - 'a'] == 0)
+//         {
+//             return false;
+//         }
+//         count[str2[i] - 'a']--;
+//     }
 
-    return true;
-}
-int main()
-{
-    string str1 = "anagram";
-    string str2 = "nagaram";
+//     return true;
+// }
+// int main()
+// {
+//     string str1 = "anagram";
+//     string str2 = "nagaram";
 
-    cout<< isAnagram(str1, str2);
+//     cout<< isAnagram(str1, str2);
 
-    return 0;
-}
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// bool isAnagram(string str1, string str2)
+// {
+//     sort(str1.begin(), str1.end());
+//     sort(str2.begin(), str2.end());
+
+//     if (str1 == str2)
+//     {
+//         return true;
+//     }
+//     else
+//     {
+//         return false;
+//     }
+// }
+// int main()
+// {
+//     string str1 = "anagram";
+//     string str2 = "nagaram";
+
+//     cout << isAnagram(str1, str2);
+
+//     return 0;
+// }
