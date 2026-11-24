@@ -1688,3 +1688,32 @@
 
 //     return 0;
 // }
+
+
+#include <bits/stdc++.h>
+using namespace std;
+bool isPalindrome(string str, int n)
+{
+    int start = 0, end = n - 1;
+
+    while(start < end)
+    {
+        if(str[start] != str[end])
+        {
+            return false;
+        }
+        else
+        {
+            start++; 
+            end--;
+        }
+    }
+
+    return true;
+}
+int main()
+{
+    string str = "racecar";
+    cout << isPalindrome(str, str.length());
+    return 0;
+}
